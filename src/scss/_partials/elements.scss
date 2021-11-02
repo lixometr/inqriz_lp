@@ -1,0 +1,96 @@
+@import "../_vendors/vars";
+@import "../_vendors/mixins";
+.section_title {
+    font-size: 36px;
+    @include second_font;
+    font-weight: bold;
+    color: $dark_blue;
+    text-align: center;
+}
+
+.btn-secondary {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: 2px solid transparent;
+    background-color: $s_color;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 15px 30px;
+    box-shadow: 2px 2px 21px rgba(244, 32, 97, 0.21);
+    transition: box-shadow, background-color 0.3s;
+    cursor: pointer;
+    max-width: 100%;
+    svg {
+        fill: #fff;
+        transition: 0.3s;
+    }
+    &:hover,
+    &:focus {
+        border: 2px solid $s_color;
+        color: $s_color;
+        background-color: transparent;
+        svg {
+            fill: $s_color;
+        }
+    }
+}
+.btn-primary {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: 2px solid transparent;
+    background-color: $p_color;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 15px 30px;
+    box-shadow: 2px 2px 21px rgba(32, 0, 17, 0.21);
+    transition: 0.3s;
+    cursor: pointer;
+    max-width: 100%;
+
+    svg {
+        fill: #fff;
+        transition: 0.3s;
+    }
+    &:hover,
+    &:focus {
+        border: 2px solid $p_color;
+        color: $p_color;
+        background-color: transparent;
+        svg {
+            fill: $p_color;
+        }
+    }
+}
+.btn_test_quiz {
+    display: flex;
+    align-items: center;
+    svg {
+        margin-right: 10px;
+    }
+}
+.shadow_input {
+    @include light_shadow;
+    border: 1px solid $border_color;
+    background-color: #fff;
+    font-size: 16px;
+    border-radius: 33px;
+    padding-left: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    outline: none;
+    @include main_font;
+    transition: 0.3s;
+    &::placeholder {
+        color: #808080;
+    }
+    &:focus {
+        border: 1px solid $p_color;
+        box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.2);
+    }
+}

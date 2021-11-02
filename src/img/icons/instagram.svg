@@ -1,0 +1,30 @@
+<svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#instagram_clip)">
+<path d="M26.0248 0.456055H11.1342C5.08255 0.456055 0.15918 5.37943 0.15918 11.4311V26.3217C0.15918 32.3733 5.08255 37.2967 11.1342 37.2967H26.0248C32.0765 37.2967 36.9998 32.3733 36.9998 26.3217V11.4311C36.9998 5.37943 32.0764 0.456055 26.0248 0.456055ZM33.2937 26.3217C33.2937 30.3361 30.0393 33.5905 26.0248 33.5905H11.1342C7.11976 33.5905 3.86535 30.3361 3.86535 26.3217V11.4311C3.86535 7.41657 7.11976 4.16222 11.1342 4.16222H26.0248C30.0393 4.16222 33.2937 7.41657 33.2937 11.4311V26.3217Z" fill="url(#instagram_gradient)"/>
+<path d="M18.5796 9.34766C13.3257 9.34766 9.05127 13.622 9.05127 18.8759C9.05127 24.1297 13.3257 28.4042 18.5796 28.4042C23.8335 28.4042 28.1079 24.1298 28.1079 18.8759C28.1079 13.622 23.8335 9.34766 18.5796 9.34766ZM18.5796 24.6981C15.3641 24.6981 12.7574 22.0915 12.7574 18.876C12.7574 15.6605 15.3641 13.0538 18.5796 13.0538C21.7951 13.0538 24.4017 15.6605 24.4017 18.876C24.4017 22.0914 21.795 24.6981 18.5796 24.6981Z" fill="url(#instagram_gradient_1)"/>
+<path d="M28.1264 11.7031C29.3874 11.7031 30.4096 10.6809 30.4096 9.4199C30.4096 8.15893 29.3874 7.13672 28.1264 7.13672C26.8655 7.13672 25.8433 8.15893 25.8433 9.4199C25.8433 10.6809 26.8655 11.7031 28.1264 11.7031Z" fill="url(#instagram_gradient_2)"/>
+</g>
+<defs>
+<linearGradient id="instagram_gradient" x1="18.5795" y1="37.1895" x2="18.5795" y2="0.742202" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E09B3D"/>
+<stop offset="0.3" stop-color="#C74C4D"/>
+<stop offset="0.6" stop-color="#C21975"/>
+<stop offset="1" stop-color="#7024C4"/>
+</linearGradient>
+<linearGradient id="instagram_gradient_1" x1="18.5796" y1="37.189" x2="18.5796" y2="0.741783" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E09B3D"/>
+<stop offset="0.3" stop-color="#C74C4D"/>
+<stop offset="0.6" stop-color="#C21975"/>
+<stop offset="1" stop-color="#7024C4"/>
+</linearGradient>
+<linearGradient id="instagram_gradient_2" x1="28.1264" y1="37.1898" x2="28.1264" y2="0.742485" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E09B3D"/>
+<stop offset="0.3" stop-color="#C74C4D"/>
+<stop offset="0.6" stop-color="#C21975"/>
+<stop offset="1" stop-color="#7024C4"/>
+</linearGradient>
+<clipPath id="instagram_clip">
+<rect x="0.15918" y="0.456055" width="36.8407" height="36.8407" fill="white"/>
+</clipPath>
+</defs>
+</svg>

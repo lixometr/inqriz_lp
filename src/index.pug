@@ -1,0 +1,307 @@
+extends ./_layouts/default
+block vars
+	- var title = 'Inqriz - Конструктор квизов на сайт Бесплатно'
+	- var bodyClass = "main_page"
+block styles
+	link(rel="stylesheet" href="/css/styles.css")
+	link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.3/nouislider.min.css")
+	link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css")
+	link(rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css")
+	// Global site tag (gtag.js) - Google Analytics 
+	script(async src="https://www.googletagmanager.com/gtag/js?id=UA-158833056-1")
+	script.
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-158833056-1');
+block content
+	section.first_section
+		.container
+			.first_section_content
+				p(data-aos="fade-right" data-aos-duration="500").pre_title Конструктор квизов
+				h1(data-aos="fade-right" data-aos-delay="350" data-aos-duration="500").main_title Увеличим ваши продажи <br /> с помощью квиза
+				p(data-aos="fade-right" data-aos-delay="600" data-aos-duration="500").sub_title 
+					| Создайте квиз за 10 минут в конструкторе
+					br
+					| установите к себе на сайт 
+					br
+					| и получайте горячие заявки 
+					
+				.content_btns
+					a(href="https://app.inqriz.com" class="first_section_btn btn-secondary ga_cta_btn" data-aos="zoom-out-up" data-aos-delay="1100" data-aos-duration="500") Попробовать
+					a(data-scroll href="#what_is_it" class="first_section_btn_second" data-aos="fade-left" data-aos-delay="1200" data-aos-duration="500") Что за квиз?
+			.first_section_img( data-aos="fade-left" data-aos-delay="1400" data-aos-duration="500")
+				.first_section_svg_1
+					include ./img/first_img.svg
+				.first_section_svg_2
+					include ./img/first_screen_figure_1.svg
+				.first_section_svg_3
+					include ./img/first_screen_figure_2.svg
+		.first_section_bg( data-aos="zoom-out"  data-aos-duration="1400")
+			include ./img/first_screen_bg.svg
+			.first_section_bg_particles
+				- var n = 0;
+				while n < 4
+					.first_section_bg_cross
+						include ./img/first_screen_cross.svg
+					- n++;
+	section.what_it#what_is_it
+		.container
+			.what_it_row
+				.what_it_text(data-aos="fade-right" )
+					b.what_it_title Квиз еще называют опросом, тестом или викториной. 
+					p.what_it_text.
+						Фишка квиз-маркетинга заключается в том, что человеку, после ответов на несколько вопросов, показывается форма с призывом ввести контакты и получить какой-либо бонус.
+					button.btn-secondary.btn_test_quiz.ga_open_quiz.inqriz_call_btn
+						include ./img/icons/test_quiz.svg
+						| Протестировать квиз
+				.what_it_img(data-aos="fade-left" data-aos-offset="200" data-aos-delay="150")
+					img(src="/img/quiz_mockup.png", alt="quiz_mockup")
+					.what_it_img_bg
+						include ./img/quiz_mockup_bg.svg
+	section.try_now(data-aos="fade-up" data-aos-offset="150")
+		.container
+			.try_now_title Попробуйте бесплатно
+			
+			form.try_now_form
+				input(type="email" placeholder="Ваш email, пожалуйста").shadow_input
+				button(type="submit").try_now_submit.btn-secondary Войти
+					include ./img/icons/rocket.svg
+			.try_now_error
+			.try_now_gift
+				include ./img/icons/gift.svg
+				.gift_text
+					<b>30 </b>
+					| бесплатных заявок при регистрации
+	section.how_works#how_it_works
+		.container
+			h2.section_title Как это работает
+			.how_works_wrapper
+				.how_works_items
+					.how_works_item_wrapper
+						.how_works_num_wrapper(data-aos="fade-in")
+							.how_works_num 1
+						.how_works_item(data-aos="fade-right" data-aos-offset="150")
+							.how_works_item_img
+								img(src="./img/how_it_works/1.svg" alt="image")
+							.how_works_item_content
+								.how_works_item_title Создаете квиз
+								.how_works_item_list
+									.how_works_pros Настраиваете квиз
+									.how_works_pros Добавляете интеграции
+									.how_works_pros Устанавливаете квиз на сайт
+					.how_works_item_wrapper
+						.how_works_num_wrapper(data-aos="fade-in" )
+							.how_works_num  2
+						.how_works_item(data-aos="fade-left" data-aos-offset="150")
+							.how_works_item_img
+								img(src="./img/how_it_works/2.svg" alt="image")
+							.how_works_item_content
+								.how_works_item_title Посетитель проходит квиз и оставляет заявку
+								.how_works_item_list
+									.how_works_pros Игровая механика квиза и дополнительные бонусы, увеличивают конверсию    
+					.how_works_item_wrapper
+						.how_works_num_wrapper(data-aos="fade-in")
+							.how_works_num 3
+						.how_works_item(data-aos="fade-right" data-aos-offset="150")
+							.how_works_item_img
+								img(src="./img/how_it_works/3.svg" alt="image")
+							.how_works_item_content
+								.how_works_item_title Получаете нового клиента
+								.how_works_item_list
+									.how_works_pros Узнаете об его потребностях
+									.how_works_pros Сегментируете его в категории
+									.how_works_pros автоматически создается заявка в CRM (если настроена) и приходит письмо на почту 
+					.how_works_item_wrapper
+						.how_works_num_wrapper(data-aos="fade-in")
+							.how_works_num 4
+						.how_works_item(data-aos="fade-left" data-aos-offset="150")
+							.how_works_item_img
+								img(src="./img/how_it_works/4.svg" alt="image")
+							.how_works_item_content
+								.how_works_item_title Делаете уникальное предложение
+								.how_works_item_list
+									.how_works_pros Добавляете в рассылку
+									.how_works_pros Настраиваете рекламу
+					.how_works_item_wrapper
+						.how_works_num_wrapper(data-aos="fade-in" )
+							.how_works_num 5
+						.how_works_item(data-aos="fade-right" data-aos-offset="150")
+							.how_works_item_img
+								img(src="./img/how_it_works/5.svg" alt="image")
+							.how_works_item_content
+								.how_works_item_title Клиент делает заказ
+				.how_works_bar
+			button.btn-secondary.btn_test_quiz.ga_open_quiz.inqriz_call_btn
+				include ./img/icons/test_quiz.svg
+				| Протестировать квиз
+
+
+		.how_works_bg
+			include ./img/how_works_road.svg
+	section.abilities
+		.container
+			h2.section_title Возможности
+			.abilities_inner_wrapper.swiper-container
+				.abilities_items.swiper-wrapper
+					.abilities_item.swiper-slide
+						.abilities_item_title Множество настроек внешнего вида
+						.abilities_item_sub_title Можно настроить отдельно дизайн на компьютере, планшете и телефоне
+						.abilities_item_img.two_img
+							img(src="/img/abilities/1_1.jpg" alt="image")
+							img(src="/img/abilities/1_2.jpg" alt="image")
+					.abilities_item.swiper-slide
+						.abilities_item_title Разные варианты ответов
+						.abilities_item_sub_title Удобный способ ввода для клиента
+						.abilities_item_img
+							img(src="/img/abilities/2.jpg" alt="image")
+					.abilities_item.swiper-slide
+						.abilities_item_title Тонкие настройка показа
+						.abilities_item_sub_title Настройте квиз на любую аудиторию
+						.abilities_item_img
+							img(src="/img/abilities/3.jpg" alt="image")
+					.abilities_item.swiper-slide
+						.abilities_item_title Ветвление результатов
+						.abilities_item_sub_title Показываете определенный результат, взависимости от ответов на вопросы, для лучшей конверсии
+						.abilities_item_img.two_img
+							img(src="/img/abilities/4_1.jpg" alt="image")
+							img(src="/img/abilities/4_2.jpg" alt="image")
+					.abilities_item.swiper-slide
+						.abilities_item_title Коллекция готовых квизов
+						.abilities_item_sub_title Выберете нужный квиз, подстройте под ваш сайт и запускайте через 5 минут!
+						.abilities_item_img
+							img(src="/img/abilities/5.jpg" alt="image")
+					.abilities_item.swiper-slide
+						.abilities_item_title Удобный редактор
+						.abilities_item_sub_title Интуитивно понятный интерфейс и щепотка плавных анимаций 
+						.abilities_item_img
+							img(src="/img/abilities/6.jpg" alt="image")
+				.swiper-pagination
+	section.price#how_much_costs
+		.container
+			.section_title Стоимость
+			.price_sub_title Плати за то, что используешь
+			.price_wrapper
+				.price_calculator_wrapper(data-aos="fade-up" data-aos-offset="150")
+					.price_calculator_inner_wrapper
+						.price_calculator
+							.price_calculator_sale
+								.price_calculator_sale_item 10%
+								.price_calculator_sale_item 20%
+								.price_calculator_sale_item 40%
+								.price_calculator_sale_item 50%
+								//- .price_calculator_sale_item 50%
+
+							.calculator_element.js-price-calculator
+							.price_calculator_label
+								.price_calculator_label_item 10
+								.price_calculator_label_item 50
+								.price_calculator_label_item 100
+								.price_calculator_label_item 200
+								.price_calculator_label_item 500
+								.price_calculator_label_item 1000
+								.price_calculator_label_item 5000
+						.price_calculator_label_info
+							span Скидка
+							span Количество
+					.price_info
+						.price_info_text Заявки можно использовать в течение <b>любого</b> количества времени.
+						
+						.price_mob_sale
+							span Скидка - 
+							span.js-calculator-sale
+						.price_mob_count
+							span Заявки - 
+							span.js-calculator-count
+						.price_info_cost_wrapper
+							.price_info_cost.js-calculator-total 1500р
+							a(href="https://app.inqriz.com/balance").btn-primary.price_info_btn.ga_cta_btn Заказать
+					.price_post_info
+						|Когда клиент проходит квиз, и оставляет свои данные с вашего счета списывается 1 заявка
+
+
+				.price_banner_wrapper(data-aos="fade-up" data-aos-delay="150" data-aos-offset="150")
+					.price_banner
+						.price_banner_title Бесплатная версия
+						.price_banner_items
+							.price_banner_item
+								span <b>30</b> заявок при регистрации
+							.price_banner_item до 5 квизов в аккаунте
+							.price_banner_item 1 интеграция
+						a(href="https://app.inqriz.com").price_banner_btn.btn-secondary.ga_cta_btn Попробовать
+		.price_bg
+			include ./img/price_bg.svg
+
+	section.for_who#for_whom_is_it
+		.container
+			h2.section_title Для кого?
+			.for_who_items
+				.for_who_item(data-aos="fade-up" data-aos-offset="150")
+					.for_who_item_img
+						img(src="/img/for_who/1.svg", alt="image")
+					.for_who_item_title Стартап
+					.for_who_item_text 
+						| Составь портрет своей целевой аудитории, 
+						| <br> Узнай, что действительно нужно покупателям
+				.for_who_item(data-aos="fade-up" data-aos-delay="100" data-aos-offset="150")
+					.for_who_item_img
+						img(src="/img/for_who/2.svg", alt="image")
+					.for_who_item_title Фрилансер
+					.for_who_item_text 
+						| Задавай свои наработанные вопросы прямо в квизе.
+						| Получай заказ уже с готовым ТЗ
+				.for_who_item(data-aos="fade-up" data-aos-delay="200" data-aos-offset="150")
+					.for_who_item_img
+						img(src="/img/for_who/3.svg", alt="image")
+					.for_who_item_title Владелец сайта
+					.for_who_item_text 
+						| Собирай в 5 раз больше заявок, используя механики квиза
+				.for_who_item(data-aos="fade-up" data-aos-delay="300" data-aos-offset="150")
+					.for_who_item_img
+						img(src="/img/for_who/4.svg", alt="image")
+					.for_who_item_title Бизнес
+					.for_who_item_text 
+						| Получай горячие заявки  прямо в CRM
+	section.contact_us
+		.container
+			.pre_title Остались вопросы? Есть предложение?
+			h2.section_title Напиши нам
+			form(action="#").contact_us_form
+				.contact_us_inputs_wrapper
+					.contact_us_inputs
+						p#contact_us_input_name_wrapper.contact_us_input_wrapper
+							label(for="contact_us_input_name").contact_us_label Ваше имя
+							input(type="text", name="name" id="contact_us_input_name").contact_us_input
+						p#contact_us_input_email_wrapper.contact_us_input_wrapper
+							label(for="contact_us_input_email").contact_us_label Ваше email
+							input(type="email", name="email" required id="contact_us_input_email").contact_us_input
+							p.contact_us_input_email_error
+					.contact_us_message
+						p.contact_us_input_message_wrapper
+							label(for="contact_us_input_message").contact_us_message_label Ваше сообщение
+							textarea(name="message", cols="15", rows="4" id="contact_us_input_message")
+				button(type="submit").btn-primary.contact_us_btn.js-send-form Отправить
+
+	section.last_cta
+		.container
+			.last_cta_content
+				.last_cta_title Хватит терять покупателей
+				.last_cta_sub_title <b>Регистрируйся</b> сейчас и протестируй всю мощь
+				a(href="https://app.inqriz.com").btn-secondary.last_cta_btn.ga_cta_btn Let's go
+			.last_cta_img(data-aos="zoom-in")
+				img(src="/img/cta_img.svg", alt="image")
+block scripts
+	script(src="https://unpkg.com/aos@next/dist/aos.js")
+	script.
+		AOS.init({
+			 once: true
+		})
+	script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.3/nouislider.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js")
+	script(src="/js/scripts.js")
+	script(src="https://api.inqriz.com/inqriz_control")
+	script.
+		Inqriz.LoadQuiz({
+		id: 131
+		})

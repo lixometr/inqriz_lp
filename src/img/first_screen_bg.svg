@@ -1,0 +1,10 @@
+<svg class="first_screen_bg_svg" width="1440" height="779" viewbox="0 0 1440 779" preserveAspectRatio="none"  fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.8" d="M0 0H1440V731.043C1440 731.043 1282 675.026 1199 689.534C1116 704.042 1107 706.863 1024 731.043C941 755.223 875 779 797.5 779C720 779 713.5 663.339 602.5 659.309C491.5 655.279 392.5 720.565 305 721.774C217.5 722.983 219 689.534 140.5 689.534C62 689.534 0 731.043 0 731.043V0Z" fill="url(#first_screen_bg)" fill-opacity="0.8"/>
+<defs>
+<linearGradient id="first_screen_bg" x1="720" y1="-4.83601" x2="720" y2="745.049" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F2FDFF"/>
+<stop offset="0.769144" stop-color="#E4FBFF"/>
+<stop offset="1" stop-color="#E7EDFF"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,30 @@
+@mixin md {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (max-width: 780px) {
+    @content;
+  }
+}
+@mixin xm {
+  @media screen and (max-width: 650px) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+
+@mixin mob {
+  @media screen and (max-width: 300px) {
+    @content;
+  }
+}
+

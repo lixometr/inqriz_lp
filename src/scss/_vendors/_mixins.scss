@@ -1,0 +1,13 @@
+@import "./breakpoints";
+
+@mixin second_font {
+  font-family: $second_font, sans-serif;
+}
+
+@mixin main_font {
+  font-family: $main_font, sans-serif;
+}
+
+@mixin light_shadow {
+  box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.08);
+}

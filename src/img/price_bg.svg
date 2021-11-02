@@ -1,0 +1,10 @@
+<svg width="1139" height="801" viewBox="0 0 1139 801" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.4" d="M1125.35 773.859C1063.55 900.406 784.687 526.719 580.03 520.516C375.16 514.312 118.324 860.209 27.0088 773.859C-64.306 687.509 78.7611 26.4849 552.657 1.6717C657.655 -3.82597 747.273 24.7946 822.5 74.0639C837.5 81 834.5 50.5 847.5 55C860 62 847.376 91.3178 856.5 98.4537C858.42 99.9555 860.33 101.471 862.23 103C1095.44 290.713 1170.97 680.28 1125.35 773.859Z" fill="url(#price_bg_gradient)" stroke="white" stroke-miterlimit="10"/>
+<defs>
+<linearGradient id="price_bg_gradient" x1="1137.97" y1="400.453" x2="1.10441" y2="400.453" gradientUnits="userSpaceOnUse">
+<stop stop-color="#DFFFF9"/>
+<stop offset="0.3977" stop-color="#E8F8FA"/>
+<stop offset="0.9944" stop-color="#FFE6FD"/>
+</linearGradient>
+</defs>
+</svg>

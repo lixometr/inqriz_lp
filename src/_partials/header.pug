@@ -1,0 +1,21 @@
+header.header
+    .container
+        .logo
+            a(href="/")
+                include ../img/icons/logo.svg
+        nav.main_menu_wrapper
+            .main_menu
+                ul.menu_items
+                    li.menu_item
+                        a(data-scroll href="#what_is_it") Что это?
+                    li.menu_item
+                        a(data-scroll href="#how_it_works") Как это работает?
+                    li.menu_item
+                        a(data-scroll href="#how_much_costs") Сколько стоит?
+                    li.menu_item
+                        a(data-scroll href="#for_whom_is_it") Мне подойдет?
+            .header_account
+                .login_btn
+                    a(href="https://app.inqriz.com") Войти
+        .header_burger
+            include ../img/icons/burger.svg
